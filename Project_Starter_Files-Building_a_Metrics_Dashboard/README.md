@@ -41,6 +41,9 @@ Uptime measurement is combined for backend- and frontend-serice implying all pod
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
 
+The filled span with a test endpoint is shown in "Jaeger test span filled.png".
+The full backend Python code is shown in "full backend code including tracing and test span endpoint.png".
+
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
 
