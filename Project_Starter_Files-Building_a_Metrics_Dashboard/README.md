@@ -34,6 +34,9 @@ Secondly the !latency! showing the request response time.
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
 
+Dashboard has been uploaded by the name "uptime 4xx 5xx - SLI dashboard.png".
+Used metrics are shown below the separated panels.
+Uptime measurement is combined for backend- and frontend-serice implying all pods.
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
