@@ -54,17 +54,17 @@ The Jaeger test span from above for the backend-service is shown in "Grafana pan
 
 TROUBLE TICKET
 
-Name:
+Name: broken endpoint on backend-service
 
-Date:
+Date: 08.05.2025
 
-Subject:
+Subject: HTTP 500 
 
-Affected Area:
+Affected Area: backend-service
 
-Severity:
+Severity: low
 
-Description:
+Description: The backend-app is monitored throug a service monitor related to backend-service seen in Jaeger and Grafana. While accessing the /error endpoint the backend-service is bringing up a HTTP 500 error as shown in the "simulated troubleticket error.png". 
 
 
 ## Creating SLIs and SLOs
