@@ -70,8 +70,17 @@ Description: The backend-app is monitored throug a service monitor related to ba
 ## Creating SLIs and SLOs
 *TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name four SLIs that you would use to measure the success of this SLO.
 
+1. Uptime of frontend and backend
+2. HTTP 2xx success rate
+3. HTTP 5xx errors
+4. Latency of frontend
+
 ## Building KPIs for our plan
 *TODO*: Now that we have our SLIs and SLOs, create a list of 2-3 KPIs to accurately measure these metrics as well as a description of why those KPIs were chosen. We will make a dashboard for this, but first write them down here.
+
+1. The frontend latency has to be lower than 100ms.
+2. The HTTP 2xx success rate needs to be at least 99,95% per month.
+3. The uptime of frontend and backend needs to be at least 99,95% per month.
 
 ## Final Dashboard
 *TODO*: Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.  
