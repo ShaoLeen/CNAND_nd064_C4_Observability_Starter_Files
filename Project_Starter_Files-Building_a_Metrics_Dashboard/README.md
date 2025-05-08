@@ -78,9 +78,14 @@ Description: The backend-app is monitored throug a service monitor related to ba
 ## Building KPIs for our plan
 *TODO*: Now that we have our SLIs and SLOs, create a list of 2-3 KPIs to accurately measure these metrics as well as a description of why those KPIs were chosen. We will make a dashboard for this, but first write them down here.
 
-1. The frontend latency has to be lower than 100ms.
-2. The HTTP 2xx success rate needs to be at least 99,95% per month.
-3. The uptime of frontend and backend needs to be at least 99,95% per month.
+1. The frontend latency has to be lower than 100ms. => Higher latency means higher drop rate by users, resulting in less acceptance of the service.
+2. The HTTP 2xx success rate needs to be at least 99,95% per month. => The success rate shall cover the availability aspect of the service in addition to the plain uptime. 
+3. The uptime of frontend and backend needs to be at least 99,95% per month. => Essential SLI for having an overview of the overall uptime of the frontend and backend. 
 
 ## Final Dashboard
 *TODO*: Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.  
+
+The dashboard is shown in "Final dashboard.png" containing the following panels:
+1. The frontend latency is shown on a 99,95% percentile over a 30 days period of time.
+2. HTTP 2xx success rate is shown as percentage over a 30 days period of time.
+3. The uptime status of frontend and backend (all pods) are shown over a period of 30days. 
