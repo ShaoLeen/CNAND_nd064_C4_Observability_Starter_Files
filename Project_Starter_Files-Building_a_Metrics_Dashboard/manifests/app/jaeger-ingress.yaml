@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: jaeger-via-traefik
+  namespace: observability
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`jaeger.local`) && PathPrefix(`/`)
+      kind: Rule
+      services:
+        - name: jaeger-query
+          port: 16686
