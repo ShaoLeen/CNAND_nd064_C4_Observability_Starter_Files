@@ -47,6 +47,8 @@ The full backend Python code is shown in "full backend code including tracing an
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
 
+The Jaeger test span from above for the backend-service is shown in "Grafana panel - Jaeger test span.png" in one Grafana panel.
+
 ## Report Error
 *TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue also include a screenshot of the tracer span to demonstrate how we can user a tracer to locate errors easily.
 
