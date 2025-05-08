@@ -1,18 +1,22 @@
 $(document).ready(function () {
 
-    // all custom jQuery will go here
+    // Trigger backend via /api
     $("#firstbutton").click(function () {
         $.ajax({
-            url: "http://backend.default.svc.cluster.local", success: function (result) {
+            url: "/api", 
+            success: function (result) {
                 $("#firstbutton").toggleClass("btn-primary:focus");
-                }
+            }
         });
     });
+
+    // Trigger trial-service via /trace
     $("#secondbutton").click(function () {
         $.ajax({
-            url: "http://trial.default.svc.cluster.local", success: function (result) {
+            url: "/trace",
+            success: function (result) {
                 $("#secondbutton").toggleClass("btn-primary:focus");
             }
         });
-    });    
+    });
 });
